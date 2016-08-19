@@ -1,11 +1,11 @@
-import {createStore, applyMiddleware, compose, combineReducers} from 'redux';
-import thunk from 'redux-thunk'
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
 
-import reducer from './reducer.js';
+import reducer from './reducer-simple.js';
 
 export default createStore(
 	combineReducers({
-		fixme: reducer //TODO
+		fixme: reducer, // FIXME
 	}),
 	undefined,
 	compose(

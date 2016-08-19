@@ -7,24 +7,24 @@ export default {
 	entry: 'src/index.js',
 	sourceMap: true,
 	targets: [
-		{ dest: 'dist/index.iife.js', format: 'iife' }
+		{ dest: 'dist/index.iife.js', format: 'iife' },
 	],
 	plugins: [
 		babel({
-			plugins: ['transform-react-jsx', 'external-helpers-2']
+			plugins: ['transform-react-jsx', 'external-helpers'],
 		}),
-		nodeResolve({jsnext: true}),
+		nodeResolve({ jsnext: true }),
 		replace({
-			'process.env.NODE_ENV': JSON.stringify('production')
+			'process.env.NODE_ENV': JSON.stringify('production'),
 		}),
 		commonjs({
-			exclude: 'node_modules/lodash-es/**'
-		})
+			exclude: 'node_modules/lodash-es/**',
+		}),
 	],
 	external: ['react', 'react-dom', 'tape'],
 	globals: {
-		'react': 'React',
+		react: 'React',
 		'react-dom': 'ReactDOM',
-		'tape': 'test'
-	}
-}
+		tape: 'test',
+	},
+};

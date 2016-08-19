@@ -1,10 +1,10 @@
 {
-	"name": "ubc-farm-page-*******",
-	"version": "**.**.**",
-	"description": "***********",
+	"name": "ubc-farm-page-_______",
+	"version": "__.__.__",
+	"description": "___________",
 	"author": "Tiger Oakes <tigeroakes@gmail.com> (http://tigeroakes.com)",
 	"license": "MIT",
-	"repository": "https://github.com/NotWoods/ubc-farm/page-*********",
+	"repository": "https://github.com/NotWoods/ubc-farm/page-_________",
 	"browser": "dist/index.iife.js",
 	"private": true,
 	"dependencies": {
